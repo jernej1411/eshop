@@ -1,0 +1,21 @@
+{
+  "name": "eshop",
+  "version": "1.0.0",
+  "description": "Speltna trgovina",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Domonkoš Jernej",
+  "license": "ISC",
+  "keywords": [
+    "shop"
+  ],
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-flatten": "^0.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
