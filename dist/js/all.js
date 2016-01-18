@@ -1,4 +1,17 @@
-angular.module('ePlush', ['ui.router', 'ngResource', 'ui.bootstrap', 'ngAnimate']);
+angular.module('eshop', ['ui.router', 'ngResource', 'ui.bootstrap', 'ngAnimate']);
+angular.module('eshop').controller('mainCtrl', function($scope, Categories, Category, Items, $http){
+	
+	function init(){
+		$scope.categories = Categories.query();
+		$scope.items = Items.query();
+	}
+
+	$scope.loadCategories = function(id){
+		$scope.items = Category.query({id: id});
+	}
+
+	init();
+});
 angular.module('eshop').config(function($stateProvider, $urlRouterProvider){
 	
 	$urlRouterProvider.otherwise('/index');
@@ -17,7 +30,7 @@ angular.module('eshop').config(function($stateProvider, $urlRouterProvider){
 		controller: 'izdelkiCtrl'
 	});
 
-	$stateProvider.state('racun
+	$stateProvider.state('racun',
 		url:'/racun',
 		templateUrl: './templates/racun.html'
 	});

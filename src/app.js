@@ -1,1 +1,1 @@
-angular.module('ePlush', ['ui.router', 'ngResource', 'ui.bootstrap', 'ngAnimate']);
+angular.module('eshop', ['ui.router', 'ngResource', 'ui.bootstrap', 'ngAnimate']);

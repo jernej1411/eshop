@@ -16,7 +16,7 @@ angular.module('eshop').config(function($stateProvider, $urlRouterProvider){
 		controller: 'izdelkiCtrl'
 	});
 
-	$stateProvider.state('racun
+	$stateProvider.state('racun',
 		url:'/racun',
 		templateUrl: './templates/racun.html'
 	});
