@@ -1,0 +1,24 @@
+{
+  "name": "eshop",
+  "description": "Speltna trgovina",
+  "main": "index.js",
+  "authors": [
+    "Domonkoš Jernej"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "shop"
+  ],
+  "homepage": "https://github.com/jernej1411/eshop",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.15"
+  }
+}

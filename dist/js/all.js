@@ -75,7 +75,7 @@ angular.module('eshop').directive('eplCategory', function(){
 		controller: 'mainCtrl'
 	};
 })
-angular.module('ePlush').factory('Category', function($resource){
+angular.module('eshop').factory('Category', function($resource){
 	
 	return  $resource('http://smartninja.betoo.si/api/eshop/categories/:id/products');
 		
